@@ -1,6 +1,44 @@
-# Getting Started with Create React App
+# Documentation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Global state management
+
+For this single page app, React built-in useContext should be enough, but for 
+demonstration purposes Redux was used, wich may me overkill for this small app, but in general scales good as application grows.
+
+## Project structure
+
+For a small project like this, any file management should be fine, but i opted by 
+using a standard management wich scales good if this single page app gets bigger.
+
+Inside src folder we have:
+
+Components: All app components inside are separeted by their use, in this case 
+inside we have Tasks folder that contains all task related components and Utils 
+are the components that should be usefull in any part of app, sut as Divider and 
+Tag components.
+
+Store and Reducers: Responsable for global state management.
+
+Entities: All interfaces for entities should be created inside here, using interfaces 
+for entities are great to keep all objects with a standart format thru application.
+
+Hooks: All React custom hooks are here, to make easier to maintain.
+
+Styles: Almost all css files for application components are here, excluding index.css 
+that are base css for application, any alteration inside index.css will affect all 
+related components.
+
+Tests: Have all aplication test files. 
+
+## External libraries
+
+[Moment](https://momentjs.com/): Great to keep all Dates inside app formated correctly\
+[React-Icons](https://react-icons.github.io/react-icons/): Provides very usefull icons to use thru aplication\
+[Toastyfy](https://fkhadra.github.io/react-toastify/introduction/): Simple way to notify user\
+[Styled-Components](https://styled-components.com/): Simple to modify html default components\
+[Redux](https://react-redux.js.org/introduction/getting-started): Used for global state management 
+
+This are all external libraries used, others come with React default app creation
 
 ## Available Scripts
 
@@ -18,29 +56,3 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
