@@ -6,4 +6,6 @@ export const Input = styled.input`
   align-self: flex-start;
   border-radius: 10px;
   border-width: 1px;
+  border-color: #dcdce4;
+  background-color: #f6f6fa;
 `;

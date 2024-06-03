@@ -8,7 +8,7 @@ interface TagProps {
 
 function Tag({name,color,role}: TagProps) {
   return (
-    <p role={role} style={{borderRadius:'20px', backgroundColor:color, paddingRight:'8px', paddingLeft:'8px'}}>{name}</p>
+    <p role={role} style={{borderRadius:'20px', backgroundColor:color, padding:'4px 12px'}}>{name}</p>
   );
 }
 

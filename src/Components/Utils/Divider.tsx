@@ -8,15 +8,15 @@ interface DividerProps {
 
 function Divider({type,style, role}:DividerProps) {
   const styleDivider: React.CSSProperties = type === 'horizontal' ? {
-    borderBottom:'1px',
-    borderStyle:'solid',
-    color:'lightslategrey',
+    border:'1px solid',
+    color:'#dcdce4',
+    margin:'12px 0px',
     width:'100%',
   } : {
-    borderLeft:'1px',
-    color:'lightslategrey',
+    color:'#dcdce4',
     height:'100%',
-    borderStyle:'solid',
+    margin:'0px 12px',
+    border:'1px solid',
   }
   return (
     <div role={role} style={{...styleDivider,...style}}/>
