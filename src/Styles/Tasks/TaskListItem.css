@@ -1,42 +1,69 @@
 
-.ListItemTaskMainDiv{
-    width: 90%;
+.ListItemTaskMainDiv {
+    width: 100%;
     display: flex;
     flex-direction: column;
     max-height: 350px;
-    border: 2px solid lightslategrey;
+    border: 1px solid #dcdce4;
     border-radius: 20px;
-    box-shadow: 2px 2px 2px grey;
-    padding-left: 24px;
-    padding-right: 24px;
+    background-color: #FCFCFC;
 }
 
-.ListItemTaskMainDiv:hover{
-    background-color: lightgray;
+.ListItemContainer{
+    padding: 12px 24px;
 }
 
-.ListItemTaskHeaderDiv{
+.ListItemTaskHeaderDiv {
     width: 100%;
     align-items: center;
     justify-content: space-between;
     gap: 16px;
     display: flex;
 }
-.ListItemTaskDiv{
+
+.ListItemTaskActions{
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+}
+
+.ListItemTaskActions div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:32px
+}
+
+.ListItemTaskDiv {
+    align-items: center;
+    justify-content: center;
     gap: 16px;
     display: flex;
 }
 
-.ListTasksDiv{
+.ListTasksDiv {
     display: flex;
     width: 100%;
-    margin: 8px;
     height: 95%;
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    overflow-y: scroll;
-    overflow-x: hidden;
+}
+
+.ListItemButton{
+    cursor: pointer;
+    padding: 0 8px;
+}
+
+.ListItemButton:hover{
+    background-color: #f6f6fa;
+    border-radius: 1000px;
+}
+
+@media screen and (max-width: 800px) {
+    .ListItemTaskHeaderDiv {
+        gap: 6px;
+        flex-wrap: wrap;
+    }
 }
